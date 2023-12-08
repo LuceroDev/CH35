@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Introducción a Css</title>
+<!--unamos <link> para que lea mi hoja de estilos <href> para elejir de donde lo quiero-->
+    <link rel="stylesheet" href="./Assets/style/style.css">
+</head>
+<body>
+<!--Lorem se usa para relleno-->
+<!--Tenemos tres formas distintas de agregar estilos a un documento html:
+
+Inline (en linea): Hace mayor poder, jerarquía o valor. Si tenemos un texto Inline lo va a mandar hacia arriba porque lo reconoce como más importante.
+
+Para trabajar con los estilos in line utilizamos la palabra reservada style y con esto ya le damos la instrución de lo que queremos añadir.
+Tiene mayor jerarquía sobre la etiqueta style.
+Lo que utilizamos en el inline es el style-->
+<!--"in line" se refiere a que en la línea de código donde usas la etiqueta <style="característica"> se aplica el estilo escrito.-->
+
+<h1>Inline</h1>
+  <p style="background-color: aqua; color: blueviolet; font-size: xx-large;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi minima eum cupiditate, molestias, vero delectus excepturi quibusdam modi fugiat dignissimos id quam deserunt? Consequatur accusamus quia ab quo earum at?</p>
+
+  <!--Utilizamos la etiqueta <style> 
+  Cuando usamos los estilos dentro de la etiqueta style, "separamos" los estilos de etiquetas, para mantener un código limpio.-->
+<style>
+
+body {
+    background-color: brown;
+}
+
+</style>
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio praesentium maiores officiis? Incidunt ipsa sequi accusamus nisi aspernatur. Soluta quia distinctio fuga maxime magnam animi repellendus neque iste ratione necessitatibus.</p>
+  <!--Referencia a un documento de estilos extern
+   (Buena practica)
+     
+    Código más limpio
+    Código más entendible
+    Velocidad de lectura en nustra página
+    Escalabilidad
+
+    Utilizar estilos de un documento externo significa que vamos a tener dos documentos; uno para html Index.html con la estructura y por otro lado tenemos el documento llamado style.css para darle estilo.-->
+
+
+
+  <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Soluta, dolorum autem maxime quae eveniet sequi cumque doloremque veritatis iure aliquam nam dignissimos, cupiditate a, consequuntur et aspernatur alias iste. Eaque.</p>
+
+  <!--CLASES Y ID
+Todos pertenecemso a la clase CH35 y nustro ID sería nuestro nombre-->
+<!--Con las clases y el ID podemos seleccionar que queremos cambiar-->
+<!--La palabra reservada class ( . )
+La palabra reservada id (#)-->
+<div>
+
+  <h2 class="CH35" id="Rey">Rey</h2>
+  <h2 class="CH35" id="Uriel">Uriel</h2>
+
+</div>
+
+<div class="Generation">
+
+<h2 class="CH35" id="René">René</h2>
+<h2 class="CH35" id="Marco">Marco</h2>
+
+</div>
+<!--Para decir a que clase pertenece usamos class-->
+
+
+<!--
+  El modelo de caja nos permite establecer el diseño de 
+  nustra sitio web, ya que hace que nustros elementos se presenten en formas rectangulares y de esta forma podemos modificar el aspecto, tamaño, deiseño, et.
+-->
+</body>
+</html>

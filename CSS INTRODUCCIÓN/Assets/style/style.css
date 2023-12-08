@@ -1,0 +1,36 @@
+p{
+    background-color: blue;
+}
+
+#Rey{
+    color: blueviolet;
+}
+
+#René{
+    color: aqua;
+}
+.CH35{
+    color: blue;
+}
+/* Un ID se utiliza para seleccionar un solo elemento, mientras que una clase se utiliza para seleccionar más de un elemento. Es como si aplicaras un "IN LINE" pero en CSS */
+/* Ctrl + K + C para comentarios */
+
+.Generation{
+    width: auto;
+    height: auto;
+    margin: auto;
+    padding: 50px;
+    border: solid white;
+}
+
+div {
+    width: 200;
+    height: 200;
+    margin: 28px 50px;
+    padding: 50px;
+    border: solid seashell;
+}
+
+
+
+/* Con el div podemos seccionar o modificar de forma especifica */

@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Adopción</title>
+    ><link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    
+    <form action="">
+    <div>
+        <h1>Formulario de Adopción</h1>
+    <h3>Datos personales</h3>
+        <label for="nombre">
+            <span>Nombre completo</span>
+            <input type="text" id="nombre" placeholder="Agregue su nombre" name="nombre">
+        </label>
+    </div>
+    <div>
+        <label for="edad">
+            <span>Edad</span>
+            <input min="0" type="number" id="edad" placeholder="Agregue su edad" name="edad">
+        </label>
+    </div>
+    <div>
+        <label for="direccion">
+            <span>Dirección exacta en donde estará el peludito</span>
+            <input type="text" id="direccion" placeholder="Agregue su dirección" name="direccion">
+        </label>
+    </div>
+    <div>
+        <label for="ocupacion">
+            <span>¿Cuál es su ocupación?</span>
+            <input type="text" id="ocupacion" placeholder="Agregue su ocupación" name="ocupacion">
+        </label>
+    </div>
+    <div>
+        <label for="email">
+            <span>E-mail</span>
+            <input type="email" id="email" placeholder="Agregue su E-mail" name="email">
+        </label>
+    </div>
+    <div>
+        <label for="telefono">
+            <span>Telefono</span>
+            <input type="tel" id="telefono" placeholder="Agregue su número telefónico" name="telefono">
+        </label>
+    </div>
+    <div>
+        <span>Nivel de estudios</span>
+        <input list="estudios">
+        <datalist id="estudios">
+            <option value="Técnico">Técnico</option>
+            <option value="Tecnológico">Tecnológico</option>
+            <option value="Profesional">Profesional</option>
+            <option value="Posgrado">Posgrado</option>
+        </datalist>
+    </div>
+    <br>
+    <di>
+    <h3>Referencias</h3>
+  
+    <div>
+        <label for="referencia">
+            <span>Referencia personal</span>
+            <input type="text" id="referencia" placeholder="Agregue una refrencia" name="referencia">
+        </label>
+    </div>
+    <div>
+        <label for="telefono2">
+            <span>Telefono de referencia</span>
+            <input type="tel" id="telefono2" placeholder="Telefono de referencia" name="telefono2">
+        </label>
+    </div>
+    <div>
+        <label for="relacion">
+            <span>Relación</span>
+            <input type="text" id="relacion" placeholder="Relación" name="relacion">
+        </label>
+    </div>
+    <div>
+        <label for="referenciaf">
+            <span>Referencia familiar</span>
+            <input type="text" id="referenciaf" placeholder="Refrencia familiar" name="refrenciaf">
+        </label>
+    </div>
+    <div>
+        <label for="telefono2">
+            <span>Telefono</span>
+            <input type="tel" id="telefono2" placeholder="Número telefónico de su familiar" name="telefono2">
+        </label>
+    </div>
+    <div>
+        <label for="parentesco">
+            <span>Parentesco</span>
+            <input type="text" id="parentesco" placeholder="Agregue el parentesco" name="parentesco">
+        </label>
+    </div>
+</di>
+<br>
+
+<div>
+    <h3>Situación personal</h3>
+    <div>
+        <span>Mencione las personas con quien vive</span>
+        <input list="vive">
+        <datalist id="vive">
+            <option value="Mamá">Mamá</option>
+            <option value="Papá">Papá</option>
+            <option value="Esposo/a">Esposo/a</option>
+            <option value="Hij@/s">Hij@/s</option>
+        </datalist>
+    </div>
+</div>
+<br>
+<div>
+    <h3>Domicilio</h3>
+    <div>
+        <span>¿Qué tipo de inmueble posee?</span>
+        <input list="inmueble">
+        <datalist id="inmueble">
+            <option value="Casa propia">Casa propia</option>
+            <option value="Casa rentada">Casa rentada</option>
+            <option value="Apartamento propio">Apartamento propio</option>
+            <option value="Apartamento rentado">Apartamento rentado</option>
+            <option value="Finca propia">Finca propia</option>
+            <option value="Finca rentada">Finca rentada</option>
+        </datalist>
+    </div>
+</div>
+<div>
+    <div>
+        <span>El lugar donde vivirá el peludito posee:</span>
+        <input list="espacio">
+        <datalist id="espacio">
+            <option value="Patio">Patio</option>
+            <option value="Terraza">Terraza</option>
+            <option value="Jardín">Jardín</option>
+        </datalist>
+    </div>
+</div>
+<input type="submit" value="Enviar formulario">
+    </form>
+</body>
+</html>

@@ -1,0 +1,218 @@
+:root {
+    /* 
+    Enfoque de diseño basado en sistemas para establecer reglas y patrones escalables y reutilizables.
+    Se personalizan variables para acceder a cualquier valor de una propiedad mediante la pseudoclase ":root" con la sintaxis --nombre-variable 
+    */
+    /* --nombre-variable */
+    --font-primary: 'Poppins', sans-serif;
+    --color-primary: #A60311;
+    --color-secondary: #D9042B;
+    --color-text-primary: #D9CCB4;
+    --color-text-secondary: #D98E04;
+    --color-background: #590219;
+    --color-light: #F2F2F2;
+    --color-dark: #070C26;
+}
+
+body {
+    background-color: var(--color-background);
+    color: var(--color-light);
+    font-family:  var(--font-primary);
+}
+
+.position{
+    width: 100px;
+    height: 100px;
+    background-color: var(--color-dark);
+}
+/* La posición estatica es la posición por default de html, no se afecta por top,left ni right de ningún.*/
+
+#static {
+    position: static;
+    top: 20px;
+    bottom: 20px;
+    left: 20px;
+    right: 20px;
+    background-color: var(--color-text-secondary);
+}
+/* Es posicionado de forma relativa al viewport y si permite movimiento mediante propiedades top, bottom, left, right */
+#relative {
+    position: relative;
+    top: 50px;
+    left:200px
+    background-color: var(--color-primary);
+}
+
+#absolute {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    background-color: var(--color-light)
+    color: var(--color-dark);
+}
+
+#ancestro {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    background-color: var(--color-dark);
+    border: solid var(--color-light);
+
+}
+/*Nos permite mantener el elemento de manera fija en la viewport*/
+
+#fixed{
+left: 350px;
+top: 500px;
+position: fixed;
+background-color: cadetblue;
+}
+/*Para icono de whatsapp*/
+
+#chat{
+    position: fixed;
+    top: 520px;
+    left: 370px;
+    width: 60px;
+    height: 60px;
+}
+
+#whatsapp-icon {
+    width: 100%;
+}
+
+
+.display-inline {
+    background-color: var(--color-text-primary);
+    width: 100px;
+    height: 100px;
+    color: var(--color-dark);
+    text-align: center;
+    margin: 2px;
+}
+
+#display-1, #display-2 {
+    display: inline;
+}
+
+.display-block {
+    /*display: block;*/
+    display: inline-block;
+
+    width: 100px;
+    height: 100px;
+    background-color: var(--color-secondary);
+    text-align: center;
+    margin: 2px;
+}
+
+/*Display: none desparece el objeto despues lo pod´re usar más adelante*/
+@media(max-width:720px){  /*Aqui le indicamos que si mi pagina se hace más pequeña ya no se va a ver*/
+.display-none {
+    display: none;
+}
+}
+
+
+/* Display flex. Me permite trabajar de manera flexible con elementos anidados dentro de un ancestro. El flexbox se aplica en el container y tiene efecto sobre los hijos.
+Por default, la dirección de flex es en filas (row).
+Vamos a poder acceder a diversas propiedades para modificar el comportamiento de los elementos.
+    > - flex-direction: column, column-reverse, row, row-reverse
+    > - flex-wrap: wrap, nowrap, wrap-reverse
+    > - justify-content: center, flex-start, flex-end, space between, space-around
+    > - align-item: start, end, center
+    > - align-self: flex-start, flex-end
+*/
+
+.container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+
+    width: auto;
+    height: 350px;
+    margin: 10px;
+    padding: 15px;
+    border-radius: 10px;
+    background-color: var(--color-text-secondary);
+
+}
+.display-flex {
+    width: 100px;
+    height: 80px;
+    margin: 5px;
+    padding: 2px;
+    text-align: center;
+    background-color: var(--color-dark);
+    border-radius: 6px;
+}
+
+#item-6{
+    align-self: center;
+}
+
+.display-flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/*Documentación:https://flexboxfroggy.com/#es 
+https://developer.mozilla.org/es/docs/Web/CSS/flex*/
+
+/* Grid layout
+Elementos de una cuadrucla grid: contenedor, items, celdas, area, display: grid; */
+.grid {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    /* grid-template-rows: auto auto auto; */
+
+    gap: 20px;
+
+    padding: 10px;
+}
+
+
+.container-1 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr 2fr 2fr 1fr;
+    grid-template-areas: 
+    "head head head"
+    "aside"
+    ;
+    width: auto;
+    height: 500px;
+    border: solid var(--color-text-primary) 0.7px;
+    text-align: center;
+    margin: 10px;
+    font-size: 18px;
+}
+
+header {
+    background-color:darkviolet;
+    grid-area: head;
+}
+
+aside {
+    background-color: seagreen;
+    grid-area: aside;
+}
+
+section {
+    background-color: peru;
+    grid-area: section;
+}
+
+article {
+    background-color: tomato;
+    grid-area: article;
+}
+
+footer {
+    background-color: deepskyblue;
+    grid-area: footer;
+}
+
+Repositorio: https://github.com/danieldlcm86/RepositorioCH35
