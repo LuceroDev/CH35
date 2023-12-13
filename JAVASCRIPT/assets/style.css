@@ -1,0 +1,20 @@
+/* 
+Funciones. Son bloques de código con instrucciones que se pueden reutilizar las veces que sean necesarias.
+Algunas funciones reciben parámetros y otras no reciben parámetros.*/
+
+/* Función que permite saludar*/
+function saludar() {
+    console.log("Hola desde una función");
+}
+
+/* Funciones que retoman algo*/
+fuction saludar () {
+    console.log ("Hola invocando la función con hoisting");
+ 
+}
+
+/*Ejecutar la función con el nombre de la función y los parámetros.*/
+saludar();
+
+
+
