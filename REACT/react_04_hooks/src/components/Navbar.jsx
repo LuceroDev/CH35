@@ -1,24 +1,28 @@
 import "./Navbar.css" //Importación de CSS
-
+import ISSLogo from "../assets/ISS_logo.svg"
 // Crear función que contiene el marcado para que viva nuestro código
 const Navbar = () => {
+    const url1 = "https://www.nasa.gov/international-space-station/"
+    const url2 = "http://open-notify.org/Open-Notify-API/People-In-Space/"
+    const url3 = "https://www.nasa.gov/mission/apollo-13/"
     return (
         <>
-            {/* Fragmento (por cierto, el comentario debe ser multilinea y estar encerrado entre llaves) */}
             <div className="navbar--container">
                 <div className="navbar--title">
-                    <h1>GenMex=35</h1>
+                    <a href={url1} target="_blank" id="link--logo">
+                        <img src={ISSLogo} alt="Logo de ISS" />
+                        </a>
                 </div>
                 <div className="navbar--links">
                     {/* Cada enlace debe estar envuelto en un div individual */}
                     <div className="navbar--link">
-                        <a href="#">Home</a>
+                        <a href={url1} target="_blank"  >Home</a>
                     </div>
                     <div className="navbar--link">
-                        <a href="#">About</a>
+                        <a href={url2} target="_blank"  >Apollo 13</a>
                     </div>
                     <div className="navbar--link">
-                        <a href="#">Astros </a>
+                        <a href={url3} target="_blank" >Astros </a>
                     </div>
                 </div>
             </div>
